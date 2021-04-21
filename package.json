@@ -1,0 +1,30 @@
+{
+  "name": "coffeefuck",
+  "version": "1.0.0",
+  "description": "BrainFuck interpreter written in CoffeeScript",
+  "main": "lib/index.js",
+  "typings": "index.d.ts",
+  "scripts": {
+    "install": "npm run compile",
+    "compile": "coffee -c -b -o lib/ src/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SpeckyYT/coffeefuck.git"
+  },
+  "keywords": [
+    "brainfuck",
+    "interpreter",
+    "coffeescript",
+    "coffee"
+  ],
+  "author": "SpeckyYT",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/SpeckyYT/coffeefuck/issues"
+  },
+  "homepage": "https://github.com/SpeckyYT/coffeefuck#readme",
+  "dependencies": {
+    "coffeescript": "^2.5.1"
+  }
+}
