@@ -61,7 +61,7 @@ brainfuck = (instructions, options = {}) ->
     pos++
 
   if options.async
-    new Promise (res,rej) ->
+    new Promise (res) ->
       while loopCondition()
         await new Promise (r) -> setImmediate r
         iteration()
