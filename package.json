@@ -5,7 +5,7 @@
   "main": "lib/index.js",
   "typings": "index.d.ts",
   "scripts": {
-    "install": "npm run compile",
+    "postinstall": "npm run compile",
     "compile": "./node_modules/.bin/coffee -c -b -o lib/ src/"
   },
   "repository": {
