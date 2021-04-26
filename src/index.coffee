@@ -33,7 +33,7 @@ brainfuck = (instructions, options = {}) ->
   return buildOutput() if typeof instructions isnt 'string'
 
   iteration = ->
-    memory.push 0 if cell >= memory.length
+    memory.push 0 while cell >= memory.length
 
     switch instructions[pos]
       when '['
