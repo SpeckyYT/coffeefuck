@@ -2,10 +2,10 @@
   "name": "coffeefuck",
   "version": "1.0.2",
   "description": "BrainFuck interpreter written in CoffeeScript",
-  "main": "lib/index.js",
+  "main": "dist/index.js",
   "typings": "index.d.ts",
   "scripts": {
-    "build": "coffee -c -b -o lib/ src/"
+    "build": "coffee -c -b -o dist/ src/"
   },
   "repository": {
     "type": "git",
@@ -25,5 +25,8 @@
   "homepage": "https://github.com/SpeckyYT/coffeefuck#readme",
   "dependencies": {
     "coffeescript": "^2.5.1"
+  },
+  "directories": {
+    "lib": "src/"
   }
 }
