@@ -36,6 +36,6 @@ jobs:
         npm i
     - name: Test Module
       run: |
-        ./node_modules/.bin/coffee test.coffee
+        npm test
       env:
         CI: true

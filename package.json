@@ -5,8 +5,10 @@
   "main": "dist/index.js",
   "typings": "index.d.ts",
   "scripts": {
-    "prepublish": "npm run build",
-    "build": "coffee -c -b -o dist/ src/"
+    "prepublishOnly": "npm run build",
+    "postinstall": "npm run build",
+    "build": "coffee -c -b -o dist/ src/",
+    "test": "coffee test.coffee"
   },
   "repository": {
     "type": "git",
