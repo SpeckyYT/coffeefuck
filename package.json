@@ -1,6 +1,6 @@
 {
   "name": "coffeefuck",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "BrainFuck interpreter written in CoffeeScript",
   "main": "dist/index.js",
   "typings": "index.d.ts",
