@@ -55,7 +55,7 @@ brainfuck = (instructions, options = {}) ->
         when '.'
           output.push memory[cell]
         when ','
-          if typeof inputs[inputsIndex] is 'number' and not isNaN inputs[inputsIndex]
+          if typeof inputs[inputsIndex] is 'number' and not Number.isFinite inputs[inputsIndex]
             memory[cell] = (inputs[inputsIndex]) %% size
           inputsIndex++
     pos++
